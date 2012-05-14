@@ -1,31 +1,47 @@
 package wsi.survey.question;
 
+
 public class QuestionItem {
-	private int id;
-	private String title;
+	private String qid;			// 问题编号number，如 17道问题，即 1~17
+	private String tag;
+	private String questionType;
+	private String title;		// 问题题目content
+	private OptionItem []optionItems;
+	private int oidx;
+	private int oidx_selected;
 	private int optionNum;
-	private String option[];
-	private int idx = 0;
 
-	private int answer = 0;
-
-	private boolean[] answerMoption;
+	private boolean[] answerMoption;	// 用于多选项的 checked
 
 	public QuestionItem() {
-		this.option = new String[6];
-		this.answerMoption = new boolean[6];
-		for (int i = 0; i < 6; i++) {
-			answerMoption[i] = false;
-		}
+		this.oidx = 0;
+		this.oidx_selected = -1;
 	}
 
-	public QuestionItem(int id, String title, int optionNum) {
-		this.id = id;
-		this.title = title;
-		this.optionNum = optionNum;
-		this.option = new String[optionNum];
+	public void setQid(String qid) {
+		this.qid = qid;
 	}
 
+	public String getQid(){
+		return this.qid;
+	}
+
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
+
+	public String getTag(){
+		return this.tag;
+	}
+
+	public void setQuestionType(String questionType) {
+		this.questionType = questionType;
+	}
+
+	public String getQuestionType(){
+		return this.questionType;
+	}
+	
 	public String getTitle() {
 		return title;
 	}
@@ -34,37 +50,52 @@ public class QuestionItem {
 		this.title = title;
 	}
 
-	public void setId(String id) {
-		this.id = Integer.parseInt(id);
+	public void setOptionsNum(String questionType, int optionNum) {
+		this.optionItems = new OptionItem[optionNum];	
+		
+		if(questionType.equals("multi")){	// checked 多选
+			this.answerMoption = new boolean[optionNum];
+			for (int i = 0; i < optionNum; i++) {
+				answerMoption[i] = false;
+			}
+		}
 	}
 
-	public void setOption(String optionItem) {
-		this.option[idx] = optionItem;
-		idx++;
+	public void setOptionItem(int oidx, OptionItem optionItem) {
+		this.optionItems[oidx] = optionItem;
+		this.oidx = oidx;
 	}
 
-	public int getOptionNum() {
-		return idx;
+	public OptionItem getOptionItem(int oidx) {
+		if(oidx >= 0) {
+			return optionItems[oidx];
+		}
+		return null;
 	}
 
-	public String getOptionItem(int idx) {
-		return option[idx];
+	public int getOptionItemIndex() {
+		return oidx;
 	}
 
-	public void setAnswer(int idx) {
-		this.answer = idx;
+	public int getOptionItemNum() {
+		this.optionNum = Math.max(0, oidx+1);
+		return this.optionNum;
 	}
 
-	public int getAnswer() {
-		return this.answer;
+	public void setAnswerOptionIndex(int oidx_selected) {
+		this.oidx_selected = oidx_selected;
+	}
+	
+	public int getAnswerOptionIndex() {
+		return this.oidx_selected;
 	}
 
-	public void setAnswerOfM(boolean answer, int idx) {
-		this.answerMoption[idx] = answer;
+	public void setAnswerOfM(boolean answer, int oidx) {
+		this.answerMoption[oidx] = answer;
 	}
 
-	public boolean getAnswerofM(int idx) {
-		return this.answerMoption[idx];
+	public boolean getAnswerofM(int oidx) {
+		return this.answerMoption[oidx];
 	}
 
 }
