@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE questionnaire SYSTEM "Questionnaire.dtd">
+
+
+<!--
+	sa Self-acceptance
+	pl Purpose in Life
+	em Environmental mastery
+	pg Personal growth
+	pr Positive relations
+	ai Autonomy items
+	ss Society satisfactory
+	pp Positive
+	nn Negitive
+
+	01-18	sa sa pl em sa			pr pl em em pl
+			pg pg pr pg ai			pr ai ai
+	19-23 	avg
+	24-44 	pn	pnpnn	nppnp	npnpp	npn 
+-->
+
+<questionnaire>
+  <description>
+    <identifier>Character</identifier>
+    <caption>自评抑郁量表（SDS）</caption>
+    <information>心理幸福感(PWB,Psychological Well-being)
+	问卷内容：
+	SDS和DSI分别由20个陈述句和相应问题条目的组成。每一条木相当于一个有关症状，按1-4级评分。20个条目反映抑郁状态四组特异性症状：
+	1、精神性-情感症状，包含抑郁心境和哭泣两个条目
+	2、躯体性障碍，包含情绪的日间差异、睡眠障碍、食欲减退、性欲减退、体重减轻、便秘、心动过速、易疲劳共八个条目
+	3、精神运动性障碍，包含精神运动性迟滞和激越两个条目
+	4、抑郁的心理障碍，包含思维混乱、无望感、易激惹、犹豫不决、自我贬值、空虚感、反复思考自杀和不满足，共八个条目
+	
+	问卷评价：
+	SDS和DSI为一短程自评量表和问卷，操作方便，容易掌握，能有效地反应抑郁状态的有关症状及其严重和变化，特别适用于综合医院以发现抑郁症病人。SDS的评分不受年龄、性别、经济状况等因素影响。如受试者文化程度较低或智力水平稍差不能进行自评，可采用DSI由检查者进行评定。SDS及DSI在国外已广泛应用，我国于1985年译成中文。
+	</information>
+    <interfacetype>inf_SDS</interfacetype>
+    <remarkintroduce>
+
+    </remarkintroduce>
+  </description>
+
+  <questions>
+  
+	<question qid="q01">
+      <title>我感到情绪沮丧、郁闷</title>
+      <answer aid="a0" score="1">从无或偶尔</answer>
+      <answer aid="a1" score="2">有时</answer>
+	  <answer aid="a2" score="3">经常</answer>
+	  <answer aid="a3" score="4">总是如此</answer>
+    </question>
+  
+    <question qid="q02">
+      <title>我感到早晨心情最好</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q03">
+      <title>我要哭或想哭</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q04">
+      <title>我夜间睡眠不好</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q05">
+      <title>我吃饭像平时一样多</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q06">
+      <title>我的性功能正常</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q07">
+      <title>我感到体重减轻</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q08">
+      <title>我为便秘烦恼</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q09">
+      <title>我的心跳比平时快</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q10">
+      <title>我无故感到疲劳</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q11">
+      <title>我的头脑像往常一样清楚</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q12">
+      <title>我做事情像平时一样不感到困难</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q13">
+      <title>我坐卧不安，难以保持平静</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q14">
+      <title>我对未来感到有希望</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q15">
+      <title>我比平时更容易激怒</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q16">
+      <title>我觉得决定什么事很容易</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q17">
+      <title>我感到自己是有用的和不可缺少的人</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q18">
+      <title>我的生活很有意义</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q19">
+      <title>假若我死了别人会过得更好</title>
+      <answer aid="a0" score="0">从无或偶尔</answer>
+      <answer aid="a1" score="1">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="3">总是如此</answer>
+    </question>
+	
+	<question qid="q20">
+      <title>我仍旧喜欢自己平时喜爱的东西</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+  </questions>
+
+  
+  
+  
+  
+  
+<!-- 
+	tag
+	name：问卷的评判维度
+	label:问卷的评判维度的名称
+	title:问卷的评判维度的说明
+-->
+ 
+  
+  
+  
+  
+  
+  <remarks>
+    <remark Tag_for_score="high" Name="自我接纳">您的得分高于平均水平，属于高分组。高分组对自我持有积极的态度，承认并包容自己的优缺点，对自己过去的生活感到满意。</remark>
+    <remark Tag_for_score="low" Name="自我接纳">您的得分低于平均水平，属于低分组。低分组对自我感到十分不满意，对自己过去的生活感到失望，对自我身上的个性品质感到苦恼，希望能够改变自己的现状。</remark>
+	
+  </remarks>
+
+</questionnaire>

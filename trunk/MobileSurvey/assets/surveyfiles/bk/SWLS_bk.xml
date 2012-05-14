@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quiz>
+	<title>生活满意度量表（SWLS）</title>
+	<description>	
+    生活满意度量表（Satisfaction With Life Scale, SWLS）
+	说明：请您根据自己的真实意见或感受，不必参考别人意见，逐项回答您对下列每一语句的同意程度。
+	</description>
+	
+	<score>
+	计分标准：
+	
+	1-7分计分
+    
+	非常不同意（1）	
+    不同意（2）	
+    有些不同意（3）	
+    不确定（4）	
+    有些同意（5）	
+    同意（6）	
+    非常同意（7）
+	</score>
+	
+	<interfacetype>inf_SWLS</interfacetype>
+	
+	<xmltype>0</xmltype>
+	<questionnum>5</questionnum>
+	<question>
+		<number>1</number>
+		<content>在很多方面，我的生活与我的理想很接近。</content>
+		<option>非常不同意</option>
+		<option>不同意</option>
+		<option>有些不同意</option>
+		<option>不确定</option>
+		<option>有些同意</option>
+		<option>同意</option>
+		<option>非常同意</option>
+	</question>
+	<question>
+		<number>2</number>
+		<content>我的生活状况非常好。</content>
+		<option>非常不同意</option>
+		<option>不同意</option>
+		<option>有些不同意</option>
+		<option>不确定</option>
+		<option>有些同意</option>
+		<option>同意</option>
+		<option>非常同意</option>
+	</question>
+	<question>
+		<number>3</number>
+		<content>我对自己的生活感到满意。</content>
+		<option>非常不同意</option>
+		<option>不同意</option>
+		<option>有些不同意</option>
+		<option>不确定</option>
+		<option>有些同意</option>
+		<option>同意</option>
+		<option>非常同意</option>
+	</question>
+	<question>
+		<number>4</number>
+		<content>到目前为止，生活中我已经得到了我想要的重要的东西。</content>
+		<option>非常不同意</option>
+		<option>不同意</option>
+		<option>有些不同意</option>
+		<option>不确定</option>
+		<option>有些同意</option>
+		<option>同意</option>
+		<option>非常同意</option>
+	</question>
+	<question>
+		<number>5</number>
+		<content>如果有来世，我几乎不会改变目前的生活方式。</content>
+		<option>非常不同意</option>
+		<option>不同意</option>
+		<option>有些不同意</option>
+		<option>不确定</option>
+		<option>有些同意</option>
+		<option>同意</option>
+		<option>非常同意</option>
+	</question>
+	
+</quiz>
