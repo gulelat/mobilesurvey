@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE questionnaire SYSTEM "Questionnaire.dtd">
+
+<!--
+	大五人格 各维度求平均值				？	01 02 03 04 05 06 07 08 09 10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	外倾性(extraversion)				  E	01 06 11 16 21 26 31 36
+	随和性(agreeableness)				  A	02 07 12 17 22 27 32 37 42
+	尽责性(conscientiousness)			C	03 08 13 18 23 28 33 38 43
+	神经质或情绪稳定性(neuroticism)		N	04 09 14 19 24 29 34 39
+	开放性(openness)					O	05 10 15 20 25 30 35 40 41 44
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<questionnaire>
+  <description>
+    <identifier>16_Personality</identifier>
+    <caption>十六项人格测试（16PF）</caption>
+    <information>
+	卡特尔十六项人格测试（16PF,16 Personality Factors)本测验包括一些有关个人兴趣与态度的问题。每个人都有自己的看法，对问题的回答自然不同。无所谓正确或错误。请你尽量表达自己的意见。
+    
+	本测验共有187道题， 每道题有三种选择，请将你的选择用2B铅笔填涂在答题卡中的相应位置。作答时，请注意下列四点：
+    １．请不要费时斟酌。应当顺其自然地依你个人的反应选答。一般地说来，问题都略嫌简短而不能包含所有有关的因素或条件。通常每分钟可作四道题，全部问题应在一小时内完成。
+    ２．除非在万不得已的情形下，尽量避免如“介乎Ａ与Ｃ之间”或“不甚确定”这样的中性答案。
+    ３．请不要遗漏，务必对每一个问题作答。 有些问题似乎不符合于你，有些问题又似乎涉及隐私，但本测验的目的，在于研究比较青年或成人的兴趣和态度，希望您真实作答。
+    ４．作答时，请坦白表达自己的兴趣与态度，不必顾虑到测验者或其他人的意见与立场。
+	</information>
+	<interfacetype>inf_16PF</interfacetype>		<!-- 问卷分数计算的类名 -->
+	
+    <remarkintroduce>  </remarkintroduce>
+  </description>
+
+  <questions>
+    <question qid="q01" tag="E">
+      <title>我很明了本测试的说明：</title>
+      <answer aid="a1" score="1">A 是的</answer>
+      <answer aid="a2" score="2">B 不一定</answer>
+      <answer aid="a4" score="4">C 不是的</answer>
+    </question>
+
+    <question qid="q02" tag="A">
+      <title>我对本测验每个问题都会按自己的真实情况作答:</title>
+      <answer aid="a1" score="5">A 是的</answer>
+      <answer aid="a2" score="4">B 不一定</answer>
+      <answer aid="a3" score="3">C 不同意</answer>
+    </question>
+
+    <question qid="q03" tag="C">
+      <title>有度假机会时,我宁愿：</title>
+      <answer aid="a1" score="1">A 去一个繁华的都市</answer>
+      <answer aid="a2" score="2">B 介于A,C之间</answer>
+      <answer aid="a3" score="3">C 闲居清静而偏僻的郊区</answer>
+    </question>
+
+    <question qid="q04" tag="N">
+      <title>我有足够的能力应付困难：</title>
+      <answer aid="a1" score="1">A 是的</answer>
+      <answer aid="a2" score="2">B 不一定</answer>
+      <answer aid="a4" score="4">C 不是的</answer>
+    </question>
+
+    <question qid="q05" tag="O">
+      <title>即使是关在铁笼里的猛兽，我见了也会感到惴惴不安：</title>
+      <answer aid="a1" score="1">A 是的</answer>
+      <answer aid="a2" score="2">B 不一定</answer>
+      <answer aid="a4" score="4">C 不是的</answer>
+    </question>
+
+    <question qid="q06" tag="E">
+      <title>我总避免批评别人的言行：</title>
+      <answer aid="a1" score="5">A 是的</answer>
+      <answer aid="a2" score="4">B 有时如此</answer>
+      <answer aid="a3" score="3">C 不是的</answer>
+    </question>
+
+    <question qid="q07" tag="A">
+      <title>我的思想似乎：</title>
+      <answer aid="a1" score="1">A 走在时代前面</answer>
+      <answer aid="a2" score="2">B 一般</answer>
+      <answer aid="a3" score="3">C 正符合时代</answer>
+    </question>
+
+    <question qid="q08" tag="C">
+      <title>我不擅长说笑话，讲趣事：</title>
+      <answer aid="a1" score="5">A 是的</answer>
+      <answer aid="a2" score="4">B 介于A,C之间</answer>
+      <answer aid="a3" score="3">C 不是的</answer>
+    </question>
+
+    <question qid="q09" tag="N">
+      <title>当我见到邻居或朋友争执时，我总是：</title>
+      <answer aid="a1" score="5">A 任其自己解决</answer>
+      <answer aid="a2" score="4">B 介于A,C之间</answer>
+      <answer aid="a3" score="3">C 予以劝解</answer>
+    </question>
+
+    <question qid="q10" tag="O">
+      <title>在社交场合中时，我：</title>
+      <answer aid="a1" score="1">A 谈吐自如</answer>
+      <answer aid="a2" score="2">B 介于A,C之间</answer>
+      <answer aid="a3" score="3">C 退避三舍，保持沉默</answer>
+    </question>
+
+    <question qid="q11" tag="E">
+      <title>我愿意作一个：</title>
+      <answer aid="a2" score="2">建筑工程师</answer>
+      <answer aid="a3" score="3">不确定 </answer>
+      <answer aid="a4" score="4">社会科学的教师</answer>
+    </question>
+
+    <question qid="q12" tag="A">
+      <title>阅读时，我喜欢选读：</title>
+      <answer aid="a1" score="5">著名的宗教教义</answer>
+      <answer aid="a2" score="4">不确定</answer>
+      <answer aid="a3" score="3">政治理论书籍</answer>
+    </question>
+
+    <question qid="q13" tag="C">
+      <title>我认为很多人都有些心理不正常，只是他们不愿承认：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q14" tag="N">
+      <title>我希望我的爱人擅长交际，无须具有文艺才能：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">不一定</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q15" tag="O">
+      <title>对于头脑简单和不讲理的人，我仍能以礼相待：</title>
+      <answer aid="a1" score="1">A 是的</answer>
+      <answer aid="a2" score="2">B 介于A,C之间</answer>
+      <answer aid="a3" score="3">C 不是的</answer>
+    </question>
+
+    <question qid="q16" tag="E">
+      <title>受人侍奉时我常感到不安：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q17" tag="A">
+      <title>在从事体力或脑力劳动之后，我需要比别人更多的休息才能恢复工作效率：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q18" tag="C">
+      <title>半夜醒来，我会为种种忧虑而不能再入眠：</title>
+      <answer aid="a1" score="5">常常如此</answer>
+      <answer aid="a2" score="4">有时如此</answer>
+      <answer aid="a3" score="3">极少如此</answer>
+    </question>
+
+    <question qid="q19" tag="N">
+      <title>事情进行不顺利时，我常会急得掉眼泪：</title>
+      <answer aid="a1" score="1">从不如此</answer>
+      <answer aid="a2" score="2">有时如此</answer>
+      <answer aid="a3" score="3">时常如此</answer>
+    </question>
+
+    <question qid="q20" tag="O">
+      <title>我认为只要双方同意就可以离婚，不应当受传统礼教的束缚：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q21" tag="E">
+      <title>我对人或物的兴趣都很容易改变：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q22" tag="A">
+      <title>筹划事务时,我宁愿：</title>
+      <answer aid="a1" score="1">和别人合作</answer>
+      <answer aid="a2" score="2">不确定</answer>
+      <answer aid="a3" score="3">自己单独进行</answer>
+    </question>
+
+    <question qid="q23" tag="C">
+      <title>我常常无端地自言自语：</title>
+      <answer aid="a1" score="5">常常如此</answer>
+      <answer aid="a2" score="4">偶尔如此</answer>
+      <answer aid="a3" score="3">从不如此</answer>
+    </question>
+
+    <question qid="q24" tag="N">
+      <title>无论是工作，饮食或外出游览，我总是：</title>
+      <answer aid="a1" score="5">非常不同意</answer>
+      <answer aid="a2" score="4">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="2">有点同意</answer>
+      <answer aid="a5" score="1">非常同意</answer>
+    </question>
+
+    <question qid="q25" tag="O">
+      <title>有时我怀疑别人是否对我的言行真正有兴趣：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q26" tag="E">
+      <title>如果我在工厂里工作，我愿做：</title>
+      <answer aid="a1" score="1">非常不同意</answer>
+      <answer aid="a2" score="2">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="4">有点同意</answer>
+      <answer aid="a5" score="5">非常同意</answer>
+    </question>
+
+    <question qid="q27" tag="A">
+      <title>在阅读时我愿阅读：</title>
+      <answer aid="a1" score="5">非常不同意</answer>
+      <answer aid="a2" score="4">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="2">有点同意</answer>
+      <answer aid="a5" score="1">非常同意</answer>
+    </question>
+
+    <question qid="q28" tag="C">
+      <title>本题后面列出三个单词，哪个词与其他两个单词不同类</title>
+      <answer aid="a1" score="1">非常不同意</answer>
+      <answer aid="a2" score="2">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="4">有点同意</answer>
+      <answer aid="a5" score="5">非常同意</answer>
+    </question>
+
+    <question qid="q29" tag="N">
+      <title>如果我能到一个新的环境，我要把生活安排得：</title>
+      <answer aid="a1" score="1">非常不同意</answer>
+      <answer aid="a2" score="2">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="4">有点同意</answer>
+      <answer aid="a5" score="5">非常同意</answer>
+    </question>
+
+    <question qid="q30" tag="O">
+      <title>在一生中，我总能达到我所预期的目标：</title>
+      <answer aid="a1" score="1">非常不同意</answer>
+      <answer aid="a2" score="2">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="4">有点同意</answer>
+      <answer aid="a5" score="5">非常同意</answer>
+    </question>
+
+    <question qid="q31" tag="E">
+      <title>当我说谎时总觉得内心不安，不敢正视对方：</title>
+      <answer aid="a1" score="5">非常不同意</answer>
+      <answer aid="a2" score="4">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="2">有点同意</answer>
+      <answer aid="a5" score="1">非常同意</answer>
+    </question>
+
+    <question qid="q32" tag="A">
+      <title>假使我手里拿着一颗装着子弹的手枪，我必须把子弹拿出来才能安心：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q33" tag="C">
+      <title>朋友们大都认为我是一个说话风趣的人：</title>
+      <answer aid="a1" score="1">非常不同意</answer>
+      <answer aid="a2" score="2">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="4">有点同意</answer>
+      <answer aid="a5" score="5">非常同意</answer>
+    </question>
+
+    <question qid="q34" tag="N">
+      <title>如果人们知道我内心世界，他们都会感到惊讶：</title>
+      <answer aid="a1" score="5">非常不同意</answer>
+      <answer aid="a2" score="4">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="2">有点同意</answer>
+      <answer aid="a5" score="1">非常同意</answer>
+    </question>
+
+    <question qid="q35" tag="O">
+      <title>在社交场合，如果我突然成为众所注意的中心，我会感到局促不安</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q36" tag="E">
+      <title>我总喜欢参加规模庞大的晚会或集会：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q37" tag="A">
+      <title>在下列工作中，我喜欢的是：</title>
+      <answer aid="a1" score="5">非常不同意</answer>
+      <answer aid="a2" score="4">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="2">有点同意</answer>
+      <answer aid="a5" score="1">非常同意</answer>
+    </question>
+
+    <question qid="q38" tag="C">
+      <title>我常常怀疑那些过于友善的人的动机是否诚实</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q39" tag="N">
+      <title>我宁愿自己的生活像：</title>
+      <answer aid="a1" score="1">非常不同意</answer>
+      <answer aid="a2" score="2">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="4">有点同意</answer>
+      <answer aid="a5" score="5">非常同意</answer>
+    </question>
+
+    <question qid="q40" tag="O">
+      <title>我认为目前所需要的是：</title>
+      <answer aid="a1" score="1">非常不同意</answer>
+      <answer aid="a2" score="2">有点不同意</answer>
+      <answer aid="a3" score="3">无所谓</answer>
+      <answer aid="a4" score="4">有点同意</answer>
+      <answer aid="a5" score="5">非常同意</answer>
+    </question>
+
+    <question qid="q41" tag="O">
+      <title>有时候我觉得我需要剧烈的体力劳动：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q42" tag="A">
+      <title>我愿意跟有教养的人来往而不愿意同粗鲁的人交往：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q43" tag="A">
+      <title>在处理一些必须凭借智慧的事务中：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q44" tag="A">
+      <title>领导或老师召见我时，我：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q45" tag="A">
+      <title>如果待遇优厚，我愿意做护理精神病人的工作：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q46" tag="A">
+      <title>读报时，我喜欢读：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q47" tag="A">
+      <title>我曾担任过：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q48" tag="A">
+      <title>在游览时，我宁愿观看一个画家的写生，也不愿听大家的辩论：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q49" tag="A">
+      <title>我的神经脆弱，稍有点刺激就会战栗：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q50" tag="A">
+      <title>早晨起来，常常感到疲乏不堪：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q51" tag="A">
+      <title>如果待遇相同，我愿选做：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q52" tag="A">
+      <title>每逢过年过节或亲友生日时，我：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q53" tag="A">
+      <title>本题后列有三个数字，哪个数字与其他两个数字不同类：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q54" tag="A">
+      <title>“猫”和“鱼”就像“牛”和：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q55" tag="A">
+      <title>在做人处事的各个方面,我的父母很值得敬佩：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q56" tag="A">
+      <title>我觉得我有一些别人所不及的优良品质：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q57" tag="A">
+      <title>只要有利于大家,尽管别人认为卑贱的工作,我也乐而为之,不以为耻：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q58" tag="A">
+      <title>我喜欢看电影或参加其他娱乐活动的次数：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q59" tag="A">
+      <title>我喜欢从事需要精密技术的工作：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q60" tag="A">
+      <title>在有思想有地位的长者面前，我总较为缄默：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q61" tag="A">
+      <title>对于我来说在大众面前演讲或表演，是一件难事：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q62" tag="A">
+      <title>我愿意：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q63" tag="A">
+      <title>纵使我做了一桩贻笑大方的事，我也仍然能够将它淡然忘却：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q64" tag="A">
+      <title>没有人会幸灾乐祸的希望我遇到困难：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q65" tag="A">
+      <title>堂堂男子汉应该：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q66" tag="A">
+      <title>我喜欢去处理被别人弄得一塌糊涂的问题；</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q67" tag="A">
+      <title>当我非常高兴时，总有一种“好景不长”的感受：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q68" tag="A">
+      <title>在一般困难处境下，我总能保持乐观：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q69" tag="A">
+      <title>迁居是一件极不愉快的事：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q70" tag="A">
+      <title>在年轻的时候，如果我和父母的意见不同，我经常：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q71" tag="A">
+      <title>我希望我的爱人能够使家庭：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q72" tag="A">
+      <title>我解决问题多数依靠：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q73" tag="A">
+      <title>在需要当机立断时，我总是：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+    <question qid="q74" tag="A">
+      <title>最近在一两件事情上，我觉得自己是无辜受累：</title>
+      <answer aid="a1" score="1">是的</answer>
+      <answer aid="a2" score="2">介于A,C之间</answer>
+      <answer aid="a3" score="3">不是的</answer>
+    </question>
+
+	
+  </questions>
+
+  
+  
+  
+<!-- 
+	tag
+	name：问卷的评判维度
+	label:问卷的评判维度的名称
+	title:问卷的评判维度的说明
+-->
+  <tags>
+	<tag name="E" label="外倾性">
+		外倾性(extraversion)				  E	01 06 11 16 21 26 31 36
+	</tag>
+	<tag name="A" label="随和性">
+		随和性(agreeableness)				  A	02 07 12 17 22 27 32 37 42
+	</tag>
+	<tag name="C" label="尽责性">
+		尽责性(conscientiousness)			C	03 08 13 18 23 28 33 38 43
+	</tag>
+	<tag name="N" label="神经质或情绪稳定性">
+		神经质或情绪稳定性(neuroticism)		N	04 09 14 19 24 29 34 39
+	</tag>
+	<tag name="O" label="开放性">
+		开放性(openness)					O	05 10 15 20 25 30 35 40 41 44
+	</tag>
+  </tags>
+  
+  
+  
+  
+  <remarks>
+    <remark Tag="E" Tag_for_score="high" Name="外倾性">      外倾性(extraversion)：您的得分高于平均水平，属于高外向性。外向代表了在外界投入的能量。高外向的人喜欢与人接触，充满活力，经常感受到积极的情绪。他们热情，喜欢运动，喜欢刺激冒险。在一个群体当中，他们非常健谈，自信，喜欢引起别人的注意。
+    </remark>
+    <remark Tag="E" Tag_for_score="low" Name="外倾性">      外倾性(extraversion)：您的得分低于平均水平，属于低外向性。外向代表了在外界投入的能量。低外向的人比较安静，谨慎，不喜欢与外界过多接触。他们不喜欢与人接触不能被解释为害羞或者抑郁，这仅仅是因为比起高外向的人，他们不需要那么多的刺激，因此喜欢一个人独处。低外向人的这种特点有时会被人误认为是傲慢或者不友好，其实一旦和他接触你经常会发现他是一个非常和善的人。
+    </remark>
+	
+	
+    <remark Tag="A" Tag_for_score="high" Name="宜人性">      宜人性(agreeableness)：您的得分高于平均水平，属于高宜人性。宜人性代表了“爱”，对合作和人际和谐是否看重。宜人性高的人是善解人意的、友好的、慷慨大方的、乐于助人的，愿意为了别人放弃自己的利益。宜人性高的人对人性持乐观的态度，相信人性本善。
+    </remark>
+    <remark Tag="A" Tag_for_score="low" Name="宜人性">      宜人性(agreeableness)：您的得分低于平均水平，属于低宜人性。宜人性代表了“爱”，对合作和人际和谐是否看重。宜人性低的人则把自己的利益放在别人的利益之上。本质上，他们不关心别人的利益，因此也不乐意去帮助别人。有时候，他们对别人是非常多疑的，怀疑别人的动机。对于某些职位来说，太高的宜人性是没有必要的，尤其是需要强硬和客观判断的场合，例如科学家、评论家和士兵。
+    </remark>
+	
+	
+    <remark Tag="C" Tag_for_score="high" Name="尽责性">      尽责性(conscientiousness)：您的得分高于平均水平，属于高尽责性。尽责性指我们控制、管理和调节自身冲动的方式。高尽责的人容易避免麻烦，能够获得更大的成功。人们一般认为高尽责的人更加聪明和可靠，但是高尽责的人可能是一个完美主义者或者是一个工作狂。极端尽责的个体让人觉得单调、乏味、缺少生气。
+    </remark>
+    <remark Tag="C" Tag_for_score="low" Name="尽责性">      尽责性(conscientiousness)：您的得分低于平均水平，属于低尽责性。尽责性指我们控制、管理和调节自身冲动的方式。冲动并不一定就是坏事，有时候环境要求我们能够快速决策。低尽责性的个体常被认为是快乐的、有趣的、很好的玩伴。但是冲动的行为常常会给自己带来麻烦，虽然会给个体带来暂时的满足，但却容易产生长期的不良后果，比如攻击他人，吸食毒品等等。低尽责性的个体一般不会获得很大的成就。
+    </remark>
+	
+	
+    <remark Tag="N" Tag_for_score="high"  Name="神经质">      神经质或情绪稳定性(neuroticism)：您的得分高于平均水平，属于高神经质。神经质指个体体验消极情绪的倾向。神经质维度得分高的人更容易体验到诸如愤怒、焦虑、抑郁等消极的情绪。他们对外界刺激反应比一般人强烈，对情绪的调节能力比较差，经常处于一种不良的情绪状态下。并且这些人思维、决策、以及有效应对外部压力的能力比较差。
+    </remark>
+    <remark Tag="N" Tag_for_score="low" Name="神经质">      神经质或情绪稳定性(neuroticism)：您的得分低于平均水平，属于低神经质。神经质指个体体验消极情绪的倾向。神经质维度得分低的人较少烦恼，较少情绪化，比较平静，但这并不表明他们经常会有积极的情绪体验，积极情绪体验的频繁程度是外向性的主要内容。
+    </remark>
+	
+	
+    <remark Tag="O" Tag_for_score="high" Name="开放性">      开放性(openness)：您的得分高于平均水平，属于高开放性。开放性描述一个人的认知风格。开放性得分高的人富有想象力和创造力，好奇，欣赏艺术，对美的事物比较敏感。开放性的人偏爱抽象思维，兴趣广泛。开放性的人适合教授等职业。
+    </remark>
+    <remark Tag="O" Tag_for_score="low" Name="开放性">      开放性(openness)：您的得分低于平均水平，属于低开放性。开放性描述一个人的认知风格。封闭性的人讲求实际，偏爱常规，比较传统和保守。封闭性的人适合警察、销售、服务性职业等。
+    </remark>
+  </remarks>
+
+</questionnaire>

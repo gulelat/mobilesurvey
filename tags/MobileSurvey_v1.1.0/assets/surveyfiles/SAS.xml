@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE questionnaire SYSTEM "Questionnaire.dtd">
+
+
+<questionnaire>
+  <description>
+    <identifier>SAS</identifier>
+    <caption>焦虑自评量表（SAS）</caption>
+    <information>
+	焦虑自评量表（SAS），包含20个项目，分为4级评分的自评量表，用于评出焦虑病人的主观感受。
+	本量表适用于具有焦虑症状的成年人，具有较广泛的适用性。
+	
+	问卷评价：	SAS是一种分析病人主观症状的相当简便的临床工具。国外研究认为，SAS能较准确地反映有焦虑倾向的精神病患者的主观感受。而焦虑则是心理咨询门诊中较常见的一种情绪障碍，近年来，SAS已作为咨询门诊中了解焦虑症状的一种自评工具。
+	
+	注意事项：
+	下面有二十条文字，请仔细阅读每一条，把意思弄明白，然后根据您最近一星期的实际感觉做答。
+	</information>
+    <interfacetype>inf_SAS</interfacetype>
+    <remarkintroduce>
+
+    </remarkintroduce>
+  </description>
+
+  <questions>
+  
+	<question qid="q01">
+      <title>我觉得比平常容易紧张或着急</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+  
+    <question qid="q02">
+      <title>我无缘无故地感到害怕</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q03">
+      <title>我容易心里烦乱或觉得惊恐</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q04">
+      <title>我觉得我可能将要发疯</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q05">
+      <title>我觉得一切都很好，也不会发生什么不幸</title>
+      <answer aid="a0" score="4">没有或很少时间</answer>
+      <answer aid="a1" score="3">少部分时间</answer>
+	  <answer aid="a2" score="2">相当多时间</answer>
+	  <answer aid="a3" score="1">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q06">
+      <title>我手脚发抖打颤</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q07">
+      <title>我因为头痛、颈痛和背痛而苦恼</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q08">
+      <title>我感觉容易衰弱和疲乏</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q09">
+      <title>我得心平气和，并且容易安静坐着</title>
+      <answer aid="a0" score="4">没有或很少时间</answer>
+      <answer aid="a1" score="3">少部分时间</answer>
+	  <answer aid="a2" score="2">相当多时间</answer>
+	  <answer aid="a3" score="1">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q10">
+      <title>我觉得心跳得很快</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q11">
+      <title>我因为一阵阵头晕而苦恼</title>
+      <answer aid="a0" score="4">从无或偶尔</answer>
+      <answer aid="a1" score="3">有时</answer>
+	  <answer aid="a2" score="2">经常</answer>
+	  <answer aid="a3" score="1">总是如此</answer>
+    </question>
+	
+	<question qid="q12">
+      <title>我有晕倒发作，或觉得要晕倒似的</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q13">
+      <title>我吸气呼气都感到很容易</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q14">
+      <title>我的手脚麻木和刺痛</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q15">
+      <title>我因为胃痛和消化不良而苦恼</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q16">
+      <title>我常常要小便</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q17">
+      <title>我的手脚常常是干燥温暖的</title>
+      <answer aid="a0" score="4">没有或很少时间</answer>
+      <answer aid="a1" score="3">少部分时间</answer>
+	  <answer aid="a2" score="2">相当多时间</answer>
+	  <answer aid="a3" score="1">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q18">
+      <title>我脸红发热</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q19">
+      <title>我容易入睡并且一夜睡得很好</title>
+      <answer aid="a0" score="4">没有或很少时间</answer>
+      <answer aid="a1" score="3">少部分时间</answer>
+	  <answer aid="a2" score="2">相当多时间</answer>
+	  <answer aid="a3" score="1">绝大部分或全部时间</answer>
+    </question>
+	
+	<question qid="q20">
+      <title>我做恶梦</title>
+      <answer aid="a0" score="1">没有或很少时间</answer>
+      <answer aid="a1" score="2">少部分时间</answer>
+	  <answer aid="a2" score="3">相当多时间</answer>
+	  <answer aid="a3" score="4">绝大部分或全部时间</answer>
+    </question>
+	
+  </questions>
+
+  
+  
+  
+  
+  
+<!-- 
+	tag
+	name：问卷的评判维度
+	label:问卷的评判维度的名称
+	title:问卷的评判维度的说明
+-->
+ 
+  
+  
+  
+  
+  
+  <remarks>
+    <remark Tag_for_score="high" Name="自我接纳">您的得分高于平均水平，属于高分组。高分组对自我持有积极的态度，承认并包容自己的优缺点，对自己过去的生活感到满意。</remark>
+    <remark Tag_for_score="low" Name="自我接纳">您的得分低于平均水平，属于低分组。低分组对自我感到十分不满意，对自己过去的生活感到失望，对自我身上的个性品质感到苦恼，希望能够改变自己的现状。</remark>
+	
+  </remarks>
+
+</questionnaire>
